@@ -1,0 +1,744 @@
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('../fonts/Druk Wide.ttf'); 
+  } 
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat.ttf'); 
+  }
+ .blockBody{
+    background-color: #F5F5F5;
+}
+.blockContent{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #F5F5F5;
+}
+.filter-title{
+  padding-top: 48px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.contentRight{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  background-color: #F5F5F5;
+}
+.contentLeft{
+  width: 300px;
+}
+.contentLeft h2{
+  font-family: 'Druk Wide';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.0001px;
+  line-height: 29px;
+  color: #2C2929;
+}
+.button-clear{
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.00003px;
+  line-height: 11px;
+  color: #FE7427;
+  border: 1px solid #FE7427;
+  border-radius: 15px;
+}
+.filterFerst{
+  background-color: #ffffff;
+}
+.filterFerst p{
+  margin-left: 35px;
+  margin-top: 38px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: #2C2929;
+}
+.youShoosed{
+  min-height: 50px;
+}
+.filterTwo{
+  background-color: #F4F4F4;
+  height: 130px;
+  border: 1.5px solid #EAEAEA;
+}
+.contentLeft h3{
+  padding-top: 25px;
+  padding-left: 35px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  color: #2C2929;
+}
+.form-group{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.filterThree{
+  background-color: #ffffff;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 25px;
+}
+.filterFor{
+  background-color: #ffffff;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 25px;
+}
+
+/*style css from Checkbox*/
+/* прячем input checkbox */
+.input-che[type="checkbox"] {
+  display: none;
+}
+.form-check-label {
+  color: #ACACAC;
+  cursor: default;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: normal;
+  line-height: 10px;
+  padding: 10px 0;
+  vertical-align: middle;
+} 
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+.form-check-label:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  font: 15px/15px 'Montserrat';
+  margin-top: -5px;
+  margin-left: 140px;
+  position: absolute;
+  text-align: center;
+  text-indent: 0px;
+  width: 20px;
+  height: 20px;
+  background: #F4F4F4;
+  border: 1px solid #e3e3e3;
+  border-image: initial;
+  vertical-align: middle;
+}
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+/* checked */
+.input-che:checked + .form-check-label:before {
+  content: "\2714";
+  color: #000000;
+}
+
+/* disabled */
+.input-che:disabled + .form-check-label:before {
+  background: #eee;
+  color: #aaa;
+}
+/*end style css from checkbox*/
+.form-check{
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.input-che{
+  float: right;
+  margin-right: 25px;
+  margin-top: 5px;
+}
+.line_gor1{
+  color: #EAEAEA;
+  size: 1.5px;
+  background: #ffffff;
+}
+.filterFive{
+ 
+  background-color: #F4F4F4;
+  min-height: 140px;
+  border: 1.5px solid #EAEAEA;
+}
+.fiveColor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.fiveColorTwo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+/*style css from Checkbox Colors*/
+/* прячем input checkbox */
+.input-color[type="checkbox"] {
+  display: none;
+}
+.label-color {
+  color: #ACACAC;
+  cursor: default;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+
+  font-weight: normal;
+
+} 
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+.label-color:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  font: 15px/15px 'Montserrat';
+  position: relative;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e3e3e3;
+  border-image: initial;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+#lab-color1:before{
+  background: #F42740;
+  border-radius: 7px;
+}
+#lab-color2:before{
+  background: #ffffff;
+  border-radius: 7px;
+  color:#000000;
+}
+#lab-color3:before{
+  background: #878C8E;
+  border-radius: 7px;
+}
+#lab-color4:before{
+  background: #EFE94C;
+  border-radius: 7px;
+}
+#lab-color5:before{
+  background: #FE7427;
+  border-radius: 7px;
+}
+#lab-color6:before{
+  background: #53C948;
+  border-radius: 7px;
+}
+#lab-color7:before{
+  background: #2C2929;
+  border-radius: 7px;
+}
+#lab-color8:before{
+  background: #FF61E6;
+  border-radius: 7px;
+}
+#lab-color9:before{
+  background: #7B4F4F;
+  border-radius: 7px;
+}
+#lab-color10:before{
+  background: #283AE1;
+  border-radius: 7px;
+}
+.input-color:checked + .label-color:before {
+  content: "\2714";
+  color: #ffffff;
+  padding-top: 5px;
+}
+.input-color:disabled + .label-color:before {
+  background: #eee;
+  color: #aaa;
+}
+/*end style css from checkbox Colors*/
+.filterSex{
+  background-color: #ffffff;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.button-size{
+  margin-left: 30px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+}
+.button-country{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9.99988px;
+  line-height: 12px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 7px;
+}
+.button-country:hover{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #cac0c0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9.99988px;
+  line-height: 12px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 7px;
+}
+.button-country:active{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #000000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9.99988px;
+  line-height: 12px;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 7px;
+}
+.size-number{
+  margin-left: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+}
+/*style css from Checkbox size number*/
+/* прячем input checkbox */
+.input-size[type="checkbox"] {
+  display: none;
+}
+.label-size {
+  color: #000000;
+  cursor: default;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+
+  font-weight: normal;
+
+} 
+/* формируем внешний вид чекбокса в псевдоэлементе before */
+.label-size:before {
+  content: " ";
+  color: #575554;
+  display: inline-block;
+  font: 9px 'Montserrat';
+  position: relative;
+  text-align: center;
+  width: 25.5px;
+  height: 18.5px;
+  border: 1px solid #e3e3e3;
+  border-image: initial;
+  vertical-align: middle;
+  margin-left: 2px;
+  padding-top: 2px;
+  border-radius: 5px;
+  background: #E7E7E7;
+}
+#size22:before{
+  content: "22";
+}
+#size225:before{
+  content: "22.5";
+}
+#size23:before{
+  content: "23";
+}
+#size235:before{
+  content: "23.5";
+}
+#size24:before{
+  content: "24";
+}
+#size245:before{
+  content: "24.5";
+}
+#size25:before{
+  content: "25";
+}
+#size255:before{
+  content: "25.5";
+}
+#size26:before{
+  content: "26";
+}
+#size265:before{
+  content: "26.5";
+}
+#size27:before{
+  content: "27";
+}
+#size275:before{
+  content: "27.5";
+}
+#size28:before{
+  content: "28";
+}
+#size285:before{
+  content: "28.5";
+}
+#size29:before{
+  content: "29";
+}
+#size295:before{
+  content: "29.5";
+}
+#size30:before{
+  content: "30";
+}
+#size305:before{
+  content: "30.5";
+}
+
+/* вариации внешнего вида в зав-ти от статуса checkbox */
+/* checked */
+.input-size:checked + .label-size:before {
+  content: "\2714";
+  color: #ffffff;
+  background: #FE7427;
+  
+}
+.input-size:disabled + .label-size:before {
+  background: #E7E7E7;
+  border-radius: 4.00001px;
+}
+/*end style css from checkbox*/
+.filterSeven{
+  background-color: #ffffff;
+  padding-bottom: 35px;
+  border-radius: 0% 0% 10% 10%;
+  
+}
+.button-nove_sale{
+  padding-top: 30px;
+  margin-left: 30px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: start;
+}
+
+.button-novelties{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FE7427;
+  border: 1px solid #FE7427;
+  border-radius: 5px;
+}
+.button-novelties:hover{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #cac0c0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  border: 1px solid #FE7427;
+  border-radius: 5px;
+}
+.button-novelties:active{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #FE7427;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  border: 1px solid #FE7427;
+  border-radius: 7px;
+}
+.button-sale{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FE7427;
+  border: 1px solid #FE7427;
+  border-radius: 5px;
+}
+.button-sale:hover{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #cac0c0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  border: 1px solid #FE7427;
+  border-radius: 5px;
+}
+.button-sale:active{
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 5px;
+  background-color: #FE7427;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #ffffff;
+  border: 1px solid #FE7427;
+  border-radius: 7px;
+}
+.rightBlockOne{
+  margin-top: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.cardTovar{
+  width: 220px;
+  height: 355px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  margin-left: 18px;
+}
+.blockTovarImage{
+  width: 192px;
+  height: 193px;
+  background: #F2F2F2;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 14px;
+}
+.blockTovarImage img{
+  
+  margin-left: -15px;
+}
+.titelTovar{
+  margin: 14px;
+}
+.titleTovarName{
+  height: 40px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #797776;
+}
+.titleTovarPrice{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.0001px;
+  line-height: 13px;
+  color: #21201F;
+}
+.buttonCardTovar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: start;
+}
+.button-item{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9982px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.42326px;
+  color: #2C2929;
+  border: 1px solid #2C2929;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.button-item:hover{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9982px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.42326px;
+  border-radius: 10px;
+  background: #FE7427;
+  color: #ffffff;
+  border: 1px solid #FE7427;
+  
+}
+.button-item:active{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.9982px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.42326px;
+  border-radius: 10px;
+  background-color: #cac0c0;
+  color: #ffffff;
+  border: 1px solid #FE7427;
+}
+.button-vector{
+  border: none;
+  width: 28px;
+  height: 26px;
+  background-color: #ffffff;
+  background-image: url(../images/Vector.png);
+  background-repeat: no-repeat;
+}
+.button-vector:hover{
+  border: none;
+  width: 28px;
+  height: 26px;
+  background-color: #ffffff;
+  background-image: url(../images/Vector2.png);
+  background-repeat: no-repeat;
+}
+.pagin{
+  margin-top: 70px;
+  margin-left: 20px; 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.button-pagin{
+  margin-left: 5px;
+  width: 33px;
+  height: 33px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.3002px;
+  line-height: 15px;
+  color: #575554;
+  border: none;
+  border-radius: 5px;
+  background-color: #E3E3E3;
+}
+.button-pagin:hover{
+  margin-left: 5px;
+  width: 33px;
+  height: 33px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.3002px;
+  line-height: 15px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #FE7427;
+}
+.buttonSort{
+  margin-top: 40px;
+  margin-right: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 28px;
+  color: #29282D;
+  text-align: right; 
+  background-color: #F5F5F5;
+}
+.sort{
+  background-color: #F5F5F5;
+  border: 1px solid #FE7427;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 7px;
+}
+
+
+
